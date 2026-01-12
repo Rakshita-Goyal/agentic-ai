@@ -1,0 +1,55 @@
+AI:pattern recognition,language ,image analysis,voice recognition
+Ml is subset of AI
+AI  has rule based system ,robotics,Ml,fuzzy,a*algo
+ML has Deep Learning uses nueral networks (tranformers)
+deep learning subset is generative AI(generate the audios videos)
+
+ML:
+supervised,unsupervised,reinforcement learning
+
+supervised :y=f(x).  labelled in op 
+:supervised has classification and regression 
+classfication has binary value: spam ,non spam
+and multi valued:positive,negative,neutral
+regression: numerical time prediction 
+like property price,stock price ,  x is independent variable,y is dependent variable
+y=ax+b
+
+unsupervised learning :unlabled raw data in clusters it is grouped based on similarity and build categories ,outlier and anamoly detection 
+solves clustering and also association 
+clustering :partition ,heirarchial,
+association:market basket algo: basically relation between items
+
+reinforcement learning:agent learns to make decision by interacting with an enviournment ,receving rewards and penalties for its action 
+goal is to maximise the rewards 
+like in chess 
+
+deep learning is for non structured data more rather than using the statistatical methods
+neural networks:made of layers
+neraul network has neurons
+there is input layer ,then one or more middle/hidden layers,output layer
+each newron has bias number and we calculate the cost and measure the diffence between actual and determined output,forward propagation
+and rectify the diffence by making changes during back propagation 
+use pytorch ,tenser flow
+typs of neural networks:
+feed forward nn:single forward flow ,not for time dependent,sequential
+recurrant nn:loops is used ,remembers the previous outcomes and use it to deduce output of current neuron, for sequential,for context. , stock or language prediction 
+convolitional nn:for images ,videos in form of grid,   it redices the input size ,look small patch of the image and create a 
+tranformers:sequential data, see the complete data and choose which part to focus on ,tokens are derived ,derive the attention score for each 
+strong sense of meaning and context behind it 
+
+Generative AI:Application of deep learning
+eg:
+text:gpt ,claude,gemini
+images,audio,videos
+code:code lama,github copilot
+
+nlp and llm 
+natural language processing :train to generate,undersatnd ,interpretate the human language
+llm solves the nlp tasks
+(large language models) 
+
+computer vision :see and interpretate the images  uses cnn
+
+llm:genai+nlp
+
