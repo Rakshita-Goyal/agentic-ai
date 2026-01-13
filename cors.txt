@@ -1,0 +1,48 @@
+Browser blocks ❌
+↓
+Backend allows via headers ✅
+↓
+Browser permits request
+
+cors cross origin resource sharing 
+CORS is a browser security rule that controls which websites are allowed to access resources from another website.
+
+Same-Origin means:All three must match:
+Protocol (http / https)
+Domain
+Port
+If any one is different → cross-origin
+
+Important CORS Headers
+1️⃣ Access-Control-Allow-Origin
+Access-Control-Allow-Origin: http://localhost:3000
+✔ Allows this origin
+
+Access-Control-Allow-Origin: *
+✔ Allows all (not safe for auth APIs)
+
+2️⃣ Access-Control-Allow-Methods
+GET, POST, PUT, DELETE
+
+3️⃣ Access-Control-Allow-Headers
+Content-Type, Authorization
+
+4️⃣ Access-Control-Allow-Credentials
+true(cookies)
+
+
+Preflight Request:For unsafe requests (POST, PUT, DELETE,custom headers):
+Browser sends an OPTIONS request first.
+Preflight checks:
+Is this origin allowed?
+Is this method allowed?
+Are these headers allowed?
+Only then actual request is sent.
+
+Browser
+ ↓ OPTIONS
+Backend
+ ↓ CORS headers
+Browser
+ ↓ Actual request
+

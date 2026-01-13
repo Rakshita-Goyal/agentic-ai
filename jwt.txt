@@ -1,0 +1,47 @@
+jwt is for authentication and authorization 
+JWT (JSON Web Token) is a stateless authentication mechanism used to securely transmit information between client and server as a JSON object.
+generates tokens
+claim that the motion is allowed to occur
+eg:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.
+KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30
+
+first half is header shows which algo using 
+second half is our message
+third half is the signature
+
+header decoded
+{
+  "alg": "HS256",//which also used for encryption and signature
+  "typ": "JWT" //token tye 
+}
+payload data
+{
+  "sub": "1234567890",
+  "name": "John Doe",
+  "admin": true,
+  "iat": 1516239022
+}
+verify signature
+a-string-secret-at-least-256-bits-long         //generate the private key
+
+if someone has the token they will send he token the server decrypt with the private key and server let it use the resource 
+
+tokens stored in local storrage,seesion storage or in the cookies
+gets expired in some time
+
+refresh token is used when the access token expire ,when this is sent then access token is regenerated
+
+token vs session 
+token is stateless so the things happen between the client and server and dont need the database each time the client makes the request
+process:
+client sends its Credentials servers checks from the database if registered or not 
+now the server sends token to the client now every time it akes the request ,server decrypts it and things happen (crud operation where database is involved ) , refresh token concept also part of it
+
+session:statefull 
+client send the crdential server validate it via database information
+then set session id cokkie by server in client/browser
+same session id stored in the database also
+when make the requestion send the session id with it and server will vaodate it using the database session id kept there
+then one call for the crud happens

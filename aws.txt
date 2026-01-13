@@ -1,0 +1,12 @@
+aws services 
+User
+ ↓
+Route 53
+ ↓
+Load Balancer
+ ↓
+EC2 / Lambda
+ ↓
+RDS / DynamoDB
+ ↓
+S3 (files)
