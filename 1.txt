@@ -53,3 +53,21 @@ computer vision :see and interpretate the images  uses cnn
 
 llm:genai+nlp
 
+
+ai agents:
+llm:generate the information 
+
+llm+working:agents
+
+agent features
+Autonomy means the agent can operate independently, with minimal human input, to achieve a goal.
+planning, iteration and feedback
+coordination between agents 
+
+agents has to have llm (openai,gemini),memory,tools(functions),nlp
+user query -make a plan- execute actions with plan -reflect results-repeat
+
+generate ai: content creation
+agentic ai:decision making and execution
+
+
